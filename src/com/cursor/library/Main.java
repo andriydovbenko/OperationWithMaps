@@ -1,6 +1,6 @@
 package com.cursor.library;
 
-import com.cursor.library.asistant.MyLibraryAssistant;
+import com.cursor.library.assistant.MyLibraryAssistant;
 
 public class Main {
 
