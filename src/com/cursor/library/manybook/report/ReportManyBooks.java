@@ -9,7 +9,6 @@ public class ReportManyBooks {
     private final String USER_NAME;
     private final int YEAR = 2019;
     private final int MONTH = 11;
-    private int day;
     private Map<LocalDate, List<String>> libraryReport = new TreeMap<>();
 
     public ReportManyBooks(String name) {
@@ -39,6 +38,7 @@ public class ReportManyBooks {
     }
 
     public void printReport() {
+        int day;
         System.out.println("Report for: " + USER_NAME);
         for (day = 1; day < 31; day++) {
             LocalDate date = LocalDate.of(YEAR, MONTH, day);
