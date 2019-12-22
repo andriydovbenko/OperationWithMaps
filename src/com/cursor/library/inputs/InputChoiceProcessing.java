@@ -57,17 +57,14 @@ public class InputChoiceProcessing {
 
     public static int startToSelectAction() {
         int libraryChoice = 0;
-        while (libraryChoice == 0) {
+        while (libraryChoice < 1 || libraryChoice > 4) {
             Scanner inputChoice = new Scanner(System.in);
             try {
                 libraryChoice = inputChoice.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("Input Error, try again");
+                System.out.println("Input Error, enter a number");
             }
-        }
-        if (libraryChoice == 4) {
-            System.out.println("The End");
-            System.exit(0);
+            System.out.println("You should write only: 1, 2, 3 or 4");
         }
         return libraryChoice;
     }
