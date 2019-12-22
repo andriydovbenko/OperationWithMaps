@@ -30,6 +30,9 @@ public class LibraryOneBookPerDay {
                 reportOneBookLibrary.findBookTakenByDate(InputChoiceProcessing.startToSelectDate());
             } else if (choice == 3) {
                 new LibraryManyBookPerDay(nameLibraryVisitor);
+            } else if (choice == 4) {
+                System.out.println("The End");
+                System.exit(0);
             } else {
                 System.out.println("Incorrect choice");
             }
